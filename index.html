@@ -12,24 +12,37 @@
   <form action="">
 
     <select class="select" onchange="change()">
-      <option class="country0" value = "country">Choose Coin</option>
+      <option class="country0" value = "country">Choose Coin ( From )</option>
       <option class="dollar" value = "dollar">Dollar</option>
       <option id="euro-price1" value = "euro">Euro</option>
       <option id="pound-price1" value = "pound">Pound Sterling</option>
-      <option id="pound-price2" value = "Riyal">Saudi Riyal</option>
+      <option id="pound-price2" value = "riyal">Saudi Riyal</option>
       <option id="pound-price3" value = "yen">Japanese Yen</option>
+    </select>
 
-      
-      
+    <select class="select1" onchange="change()">
+      <option class="country0" value = "country1">Choose Coin ( To )</option>
+      <option class="dollar" value = "dollar1">Dollar</option>
+      <option id="euro-price2" value = "euro1">Euro</option>
+      <option id="pound-price3" value = "pound1">Pound Sterling</option>
+      <option id="pound-price4" value = "riyal1">Saudi Riyal</option>
+      <option id="pound-price5" value = "yen1">Japanese Yen</option>
     </select>
     
-    <input type="number" class="input" placeholder="Put Your Price"/>
+    <input onchange="change1()" type="number" class="input" placeholder="Put Your Price"/>
     
     <div class="egy-price">Your Price Is </div>
 
     <button class="btn">Clear</button>
     
   </form>
+
+
+  <div id="load">
+
+    <button class="btn-1">Currency Convertor</button>
+
+  </div>
 
    
     <script src="first.js"></script>
