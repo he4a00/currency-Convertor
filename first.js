@@ -11,6 +11,10 @@ let dollarPrice = document.querySelector(".input"),
     myBtn = document.querySelector(".btn");
 
 
+
+
+
+    
     
 
     
@@ -58,6 +62,13 @@ let dollarPrice = document.querySelector(".input"),
                    }   
                   };
 
+
+                  if (mySelect.value === "country" && mySelect1.value === "egp1") {
+                    dollarPrice.oninput = function() {
+                      alert("Please Choose Your Coin That You Want To Convert");
+                     }   
+                    };
+
                   
     // dollar to another currency
  
@@ -91,6 +102,12 @@ let dollarPrice = document.querySelector(".input"),
       }      
     };
 
+    if (mySelect.value === "dollar" && mySelect1.value === "egp1")  {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 15.71)}`
+      }      
+    };
+
 
 
    // euro to another currency
@@ -100,7 +117,7 @@ let dollarPrice = document.querySelector(".input"),
      dollarPrice.oninput = function() {
      egyPrice.textContent = `${(dollarPrice.value * 1)}`
     }      
-  } 
+  };
 
     if (mySelect.value === "euro" && mySelect1.value === "dollar1")  {
       dollarPrice.oninput = function() {
@@ -124,6 +141,12 @@ let dollarPrice = document.querySelector(".input"),
     if (mySelect.value === "euro" && mySelect1.value === "yen1")  {
       dollarPrice.oninput = function() {
        egyPrice.textContent = `${(dollarPrice.value * 129.79)}`
+      }      
+    };
+
+    if (mySelect.value === "euro" && mySelect1.value === "egp1")  {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 18.50)}`
       }      
     };
 
@@ -172,6 +195,12 @@ let dollarPrice = document.querySelector(".input"),
       }      
     };
 
+    if (mySelect.value === "pound" && mySelect1.value === "egp1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 21.71)}`
+      }      
+    };
+
 
     // riyal to another currency
 
@@ -207,6 +236,12 @@ let dollarPrice = document.querySelector(".input"),
     if (mySelect.value === "riyal" && mySelect1.value === "yen1") {
       dollarPrice.oninput = function() {
        egyPrice.textContent = `${(dollarPrice.value * 29.29)}`
+      }      
+    };
+
+    if (mySelect.value === "riyal" && mySelect1.value === "egp1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 4.19)}`
       }      
     };
 
@@ -247,6 +282,52 @@ let dollarPrice = document.querySelector(".input"),
       }      
     };
 
+    if (mySelect.value === "yen" && mySelect1.value === "egp1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 0.14)}`
+      }      
+    };
+
+
+    // EGP to another currency
+
+
+    if (mySelect.value === "egp" && mySelect1.value === "egp1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 1)}`
+      }      
+    };
+
+    if (mySelect.value === "egp" && mySelect1.value === "dollar1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 0.064)}`
+      }      
+    };
+
+    if (mySelect.value === "egp" && mySelect1.value === "euro1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 0.054)}`
+      }      
+    };
+
+    if (mySelect.value === "egp" && mySelect1.value === "pound1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 0.046)}`
+      }      
+    };
+
+    if (mySelect.value === "egp" && mySelect1.value === "riyal1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 0.24)}`
+      }      
+    };
+
+    if (mySelect.value === "egp" && mySelect1.value === "yen1") {
+      dollarPrice.oninput = function() {
+       egyPrice.textContent = `${(dollarPrice.value * 7.01)}`
+      }      
+    };
+
 
     
   
@@ -259,11 +340,7 @@ let dollarPrice = document.querySelector(".input"),
      });
 
 
-     // onload event 
-
-     window.onload = function() {
-      document.querySelector('.btn-1').classList.add('active');
-     }; 
+     
     
      
 
